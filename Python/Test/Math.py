@@ -40,3 +40,8 @@ import math
 print(pow(2, 3))
 print(math.sqrt(144))
 print(round(2.7))
+
+
+def round_down(n, decimals=0):
+    multiplier = 10 ** decimals
+    return math.floor(n * multiplier) / multiplier
